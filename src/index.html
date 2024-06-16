@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KARKASVOROT.BY</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+ 
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <a href="#" class="main__logo"
+        >KARKASVOROT.<span class="logo">BY</span></a
+      >
+      <nav class="navbar">
+        <a href="#products">ПРОДУКЦИЯ И ЦЕНЫ</a>
+        <a href="#examples">НАШИ РАБОТЫ</a>
+        <a href="#order">ОФОРМИТЬ ЗАКАЗ</a>
+      </nav>
+
+      <div class="contact">
+        <a href="viber://chat?number=%2B375447726823"
+          ><i class="fa-brands fa-viber"></i
+        ></a>
+        <a href="tg://resolve?domain=<имя пользователя в Telegram>"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a>+375447726823 </a>
+      </div>
+      <div class="contact" id="menu">
+        <i class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 promo_description">
+            <div class="promo_header title">
+              КАРКАСЫ
+              <span
+                >ОТКАТНЫХ<br />
+                ВОРОТ С</span
+              >
+              КАЛИТКОЙ
+            </div>
+            <div class="promo_subheader">
+              Мы уверены, что сможем предложить Вам<br />
+              красивые варианты ворот по лучшей цене!
+            </div>
+            <ul class="promo_li">
+              <li>- Откатные ворота</li>
+              <li>- Распашные ворота</li>
+              <li>- Калитка</li>
+            </ul>
+            <a href="#order"><button class="form_btn">Заказать</button></a>
+          </div>
+
+          <div class="col-md-6 promo_img">
+            <div class="square">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    
+  
+    <section class="form_order" id="order">
+        <div class="container order">
+          <div class="order_title title">
+            <img
+              src="assets/white-arrow.svg"
+              alt=""
+              class="white_arrow order_arrow"
+            />
+            <span>Оформление</span> Заказа
+            <img
+              src="assets/blue-arrow.svg"
+              alt=""
+              class="blue_arrow order_arrow"
+            />
+          </div>
+  
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="27c88f68-910a-41c3-8ce3-d5ddbd41649f"
+            />
+            <div class="form_input">
+              <select name="products" class="form_box" required>
+                <option value="" disabled selected>Выберите продукцию</option>
+                <option value="Каркас откатных ворот">
+                  Каркас откатных ворот
+                </option>
+                <option value="Каркас распашных ворот">
+                  Каркас распашных ворот
+                </option>
+                <option value="Каркас калитки">Каркас калитки</option>
+              </select>
+  
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form_box"
+                required
+                placeholder="Ваш телефон с кодом"
+                autocomplete="off"
+              />
+  
+              <input
+                type="text"
+                name="name"
+                class="form_box"
+                required
+                placeholder="Ваше имя"
+                autocomplete="off"
+              />
+            </div>
+  
+            <input type="submit" value="Отправить" class="form_btn" name="send" />
+          </form>
+        </div>
+    </section>
+
+  
+
+    <script
+      src="https://kit.fontawesome.com/fcfe014eea.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+  <footer>
+    <div class="container footer_info">
+      Все права защищены. Любое использование либо копирование материалов и
+      (или) подборки материалов сайта, элементов дизайна и оформления
+      допускается лишь с письменного разрешения правообладателя и только со
+      ссылкой на источник: URL
+    </div>
+  </footer>
+</html>
