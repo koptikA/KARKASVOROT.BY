@@ -344,7 +344,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.swiper-container * {
+/* .swiper-container * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -444,4 +444,9 @@ footer {
   .swiper-slide .swiper-content .swiper-caption {
     font-size: 13px;
   }
+} */
+
+/* components/carousel-item */
+#carouselExampleControls {
+  margin-bottom: 70px;
 }
